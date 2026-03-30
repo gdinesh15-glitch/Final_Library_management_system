@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, sans-serif;
+    background-color: #ffffff;
+    color: #2d3436;
+    line-height: 1.6;
+    overflow-x: scroll;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a2a6c;
+    font-weight: 600;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-btn {
+    background: #e53935;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background: #c62828;
+}
+
+header h1 {
+    font-family: verdana, serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #1a2a6c;
+    letter-spacing: 0.5px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("homeimg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-family: verdana, serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+
+/* BUTTON */
+
+.btn {
+    background: #8b0443;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #d8901f;
+    transform: translateY(-5px);
+}
+
+.btn-login {
+    background-color: #b8860b;
+    color: #ffffff;
+    padding: 18px 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 20px rgba(184, 134, 11, 0.3);
+    transition: all 0.4s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    color: #1a2a6c;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.features {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: #c3d3d4;
+    border-color: #b8860b;
+}
+
+.feature-card h3 {
+    font-family: verdana, serif;
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+}
+
+
+/* STATISTICS BAR */
+
+.stats-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, #1a2a6c, #2b5876);
+    color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 150px;
+}
+
+.stat-number {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffcc33;
+}
+
+.stat-card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #4b2c20;
+    color: #ffffff;
+    padding: 4rem 8% 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: verdana, serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
